@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Media and Tables Demo">
+    <title>Media Gallery & Course Progress - ADA Egypt</title>
+</head>
+<body>
+    <h1>My Learning Portfolio</h1>
+    <h2>Multimedia Showcase</h2>
+
+    <!-- Audio Section -->
+    <h3>Featured Audio</h3>
+    <audio controls preload="metadata">
+        <source src="001.mp3" type="mpeg">
+        <source src="001.ogg" type="ogg">
+        <p>Your browser doesn't support audio playback.
+           <a href="001.mp3">Download the audio file</a>.</p>
+    </audio>
+
+    <!-- Video Section -->
+    <h3>Course Introduction Video</h3>
+    <video controls width="640" height="360" poster="images/video-poster.jpg">
+        <source src="854322-hd_1280_720_25fps.mp4" type="video/mp4">
+        <source src="intro.webm" type="video/webm">
+        <track src="subtitles-en.vtt" kind="subtitles" srclang="en" label="English">
+        <p>Your browser doesn't support video playback.</p>
+    </video>
+
+    <!-- Iframe Section -->
+    <h3>Our Location</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=..."
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        title="Academy of Digital Arts Egypt Location">
+    </iframe>
+
+    <!-- Table Section -->
+    <h3>Course Progress Report</h3>
+    <table border="1">
+        <caption>HTML Learning Progress - Week 2</caption>
+        <thead>
+            <tr>
+                <th scope="col">Topic</th>
+                <th scope="col">Hours Studied</th>
+                <th scope="col">Assignments</th>
+                <th scope="col">Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">HTML Basics</th>
+                <td>4</td>
+                <td>Portfolio Page</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <th scope="row">Media Elements</th>
+                <td>4</td>
+                <td>Media Gallery</td>
+                <td>In Progress</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total Hours</th>
+                <td>8</td>
+                <td colspan="2">Excellent Progress!</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <p><em>Created during HTML Session 2 - Academy of Digital Arts Egypt</em></p>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration - ADA Egypt</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        fieldset { margin: 20px 0; padding: 15px; }
+        label { display: block; margin: 10px 0 5px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; }
+    </style>
+</head>
+<body>
+    <h1>Academy of Digital Arts Egypt</h1>
+    <h2>Course Registration Form</h2>
+
+    <form action="/register" method="POST" enctype="multipart/form-data">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name"
+                   required minlength="2" autocomplete="given-name">
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name"
+                   required minlength="2" autocomplete="family-name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   required autocomplete="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="(\+20|0)[0-9]{10}"
+                   placeholder="+20 123 456 7890"
+                   title="Egyptian phone number format">
+
+            <label for="birth-date">Date of Birth:</label>
+            <input type="date" id="birth-date" name="birth-date"
+                   max="2006-12-31" required>
+        </fieldset>
+
+        <!-- Course Selection -->
+        <fieldset>
+            <legend>Course Information</legend>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Choose your course...</option>
+                <option value="frontend-react">Front-End React Development</option>
+                <option value="backend-node">Back-End Node.js</option>
+                <option value="fullstack">Full-Stack Development</option>
+                <option value="mobile">Mobile App Development</option>
+            </select>
+
+            <fieldset>
+                <legend>Experience Level:</legend>
+                <input type="radio" id="beginner" name="experience"
+                       value="beginner" required>
+                <label for="beginner">Beginner (No prior experience)</label>
+
+                <input type="radio" id="intermediate" name="experience"
+                       value="intermediate">
+                <label for="intermediate">Intermediate (Some experience)</label>
+
+                <input type="radio" id="advanced" name="experience"
+                       value="advanced">
+                <label for="advanced">Advanced (Professional experience)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Learning Goals (Select all that apply):</legend>
+                <input type="checkbox" id="career-change" name="goals"
+                       value="career-change">
+                <label for="career-change">Career Change</label>
+
+                <input type="checkbox" id="skill-upgrade" name="goals"
+                       value="skill-upgrade">
+                <label for="skill-upgrade">Skill Upgrade</label>
+
+                <input type="checkbox" id="freelancing" name="goals"
+                       value="freelancing">
+                <label for="freelancing">Freelancing</label>
+
+                <input type="checkbox" id="startup" name="goals"
+                       value="startup">
+                <label for="startup">Start a Business</label>
+            </fieldset>
+        </fieldset>
+
+        <!-- Additional Information -->
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="resume">Upload Resume (Optional):</label>
+            <input type="file" id="resume" name="resume"
+                   accept=".pdf,.doc,.docx">
+
+            <label for="motivation">Why do you want to join this course?</label>
+            <textarea id="motivation" name="motivation"
+                      rows="4" maxlength="500"
+                      placeholder="Tell us about your motivation..."></textarea>
+
+            <label for="start-date">Preferred Start Date:</label>
+            <input type="date" id="start-date" name="start-date"
+                   min="2025-01-01">
+        </fieldset>
+
+        <!-- Agreement -->
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter for updates</label>
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+</body>
+</html>
