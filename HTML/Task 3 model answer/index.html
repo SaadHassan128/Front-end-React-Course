@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Step 1: Create Form Document Structure -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Course registration form for Academy of Digital Arts Egypt web development programs taught by Saad Hassan Saad"
+    />
+    <title>Course Registration - Saad Hassan Saad</title>
+  </head>
+  <body>
+    <header>
+      <h1>Academy of Digital Arts Egypt</h1>
+      <h2>Course Registration Form</h2>
+      <p>
+        Register for web development courses taught by
+        <strong>Saad Hassan Saad</strong>
+      </p>
+      <p>Full Stack Web Development Instructor & Head of Software Department</p>
+    </header>
+
+    <main>
+      <!-- Form with proper action and method attributes -->
+      <form
+        action="process_registration.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <!-- Step 2: Add Personal Information Section -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <div>
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              minlength="2"
+              maxlength="50"
+              placeholder="Enter your full name"
+              autocomplete="name"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@email.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <div>
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+20 10 1234 5678"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div>
+            <label for="birthdate">Date of Birth:</label>
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              max="2006-01-01"
+              min="1950-01-01"
+            />
+          </div>
+        </fieldset>
+
+        <!-- Step 3: Add Course Selection Section -->
+        <fieldset>
+          <legend>Course Selection</legend>
+
+          <div>
+            <label for="course">Choose Course:</label>
+            <select id="course" name="course" required>
+              <option value="">-- Select a Course --</option>
+              <option value="html-css">HTML & CSS Fundamentals</option>
+              <option value="javascript">JavaScript Essentials</option>
+              <option value="react">React & Frontend Frameworks</option>
+              <option value="nodejs">Node.js & Backend Development</option>
+              <option value="fullstack">Full Stack Web Development</option>
+              <option value="database">Database Design & MongoDB</option>
+            </select>
+          </div>
+
+          <div>
+            <fieldset>
+              <legend>Experience Level</legend>
+
+              <input
+                type="radio"
+                id="beginner"
+                name="experience"
+                value="beginner"
+                required
+              />
+              <label for="beginner">Beginner</label>
+
+              <input
+                type="radio"
+                id="intermediate"
+                name="experience"
+                value="intermediate"
+              />
+              <label for="intermediate">Intermediate</label>
+
+              <input
+                type="radio"
+                id="advanced"
+                name="experience"
+                value="advanced"
+              />
+              <label for="advanced">Advanced</label>
+            </fieldset>
+          </div>
+
+          <div>
+            <fieldset>
+              <legend>Learning Goals (Select all that apply)</legend>
+
+              <input
+                type="checkbox"
+                id="career_change"
+                name="learning_goals"
+                value="career_change"
+              />
+              <label for="career_change"
+                >Career Change to Web Development</label
+              >
+
+              <input
+                type="checkbox"
+                id="skill_improvement"
+                name="learning_goals"
+                value="skill_improvement"
+              />
+              <label for="skill_improvement">Improve Current Skills</label>
+
+              <input
+                type="checkbox"
+                id="personal_project"
+                name="learning_goals"
+                value="personal_project"
+              />
+              <label for="personal_project">Build Personal Projects</label>
+
+              <input
+                type="checkbox"
+                id="freelancing"
+                name="learning_goals"
+                value="freelancing"
+              />
+              <label for="freelancing">Start Freelancing</label>
+
+              <input
+                type="checkbox"
+                id="startup"
+                name="learning_goals"
+                value="startup"
+              />
+              <label for="startup">Launch a Startup</label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+        <!-- Step 4: Add Additional Information Section -->
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <div>
+            <label for="resume">Upload Resume (Optional):</label>
+            <input
+              type="file"
+              id="resume"
+              name="resume"
+              accept=".pdf,.doc,.docx"
+            />
+            <small>Accepted formats: PDF, DOC, DOCX (Max size: 5MB)</small>
+          </div>
+
+          <div>
+            <label for="motivation">Motivation Message:</label>
+            <textarea
+              id="motivation"
+              name="motivation"
+              rows="5"
+              cols="50"
+              maxlength="500"
+              placeholder="Tell us why you want to join our web development program and what you hope to achieve..."
+            ></textarea>
+            <small>Maximum 500 characters</small>
+          </div>
+
+          <div>
+            <label for="duration">Expected Course Duration (in months):</label>
+            <input
+              type="number"
+              id="duration"
+              name="duration"
+              min="1"
+              max="12"
+              value="6"
+              step="1"
+            />
+          </div>
+
+          <div>
+            <label for="budget">Budget Range (EGP):</label>
+            <select id="budget" name="budget">
+              <option value="">-- Select Budget Range --</option>
+              <option value="5000-10000">5,000 - 10,000 EGP</option>
+              <option value="10000-20000">10,000 - 20,000 EGP</option>
+              <option value="20000-30000">20,000 - 30,000 EGP</option>
+              <option value="30000+">30,000+ EGP</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Step 5: Add Submit Section and Validation -->
+        <fieldset>
+          <legend>Terms and Submission</legend>
+
+          <div>
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value="agreed"
+              required
+            />
+            <label for="terms">
+              I agree to the
+              <a href="terms.html" target="_blank">Terms and Conditions</a>
+              of Academy of Digital Arts Egypt
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="newsletter"
+              value="yes"
+            />
+            <label for="newsletter">
+              Subscribe to our newsletter for course updates and web development
+              tips
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="contact_permission"
+              name="contact_permission"
+              value="yes"
+            />
+            <label for="contact_permission">
+              Allow ADA Egypt to contact me about course opportunities and
+              events
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Submit and Reset Buttons -->
+        <div>
+          <button type="submit">Register for Course</button>
+          <button type="reset">Clear Form</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <hr />
+      <section>
+        <h3>About Your Instructor</h3>
+        <p>
+          <strong>Saad Hassan Saad</strong> is a experienced Full Stack Web
+          Development Instructor and Head of Software Department at Academy of
+          Digital Arts Egypt. With a Computer Science background and extensive
+          industry experience, he specializes in modern web technologies
+          including HTML5, CSS3, JavaScript, React, Node.js, and database
+          design.
+        </p>
+
+        <p><strong>Contact Information:</strong></p>
+        <ul>
+          <li>Email: saad.hassan@ada-egypt.com</li>
+          <li>Department: Software Development</li>
+          <li>Institution: Academy of Digital Arts Egypt</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Course Information</h3>
+        <p>
+          Our web development programs are designed to take you from beginner to
+          professional developer. All courses include hands-on projects,
+          real-world applications, and industry-standard best practices.
+        </p>
+      </section>
+
+      <p>&copy; 2025 Academy of Digital Arts Egypt. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
