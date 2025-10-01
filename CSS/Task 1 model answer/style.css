@@ -1,0 +1,205 @@
+/* Step 1: CSS Reset using Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Step 1: Base Styles for Entire Page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Step 2: Container Class with Maximum Width and Center Alignment */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Step 2: Heading Styles */
+h1 {
+    color: #000000;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #1a1a1a;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 25px 0 15px 0;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #333333;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+}
+
+/* Step 3: Typography and Colors */
+p {
+    color: #555555;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666666;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Step 4: Profile Image Styling */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 5px solid #000000;
+    object-fit: cover;
+}
+
+/* Alternative rounded corners style */
+#profile-pic {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Step 2: Section Spacing */
+section {
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.about-section {
+    background-color: rgba(245, 245, 245, 0.5);
+    border-radius: 8px;
+}
+
+.skills-section {
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+.experience-section {
+    background-color: rgba(240, 240, 240, 0.3);
+    border-radius: 8px;
+}
+
+/* Step 5: Custom List Styling */
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #333333;
+    transform: translateX(10px);
+}
+
+/* Step 4: Link Styling with Pseudo-classes */
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:visited {
+    color: #444444;
+}
+
+a:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+
+/* Step 4: Button-style Contact Links */
+.contact-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.contact-button:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.contact-button:visited {
+    color: #ffffff;
+}
+
+/* Step 5: Custom Horizontal Rule */
+.custom-hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #000000, #666666, #000000);
+    margin: 30px 0;
+    opacity: 0.7;
+}
+
+/* Step 4: Transparency Effects using RGBA */
+.contact-section {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #cccccc;
+    color: #666666;
+    font-size: 0.9em;
+}
+
+/* Additional Color Variations (Hex, RGB, Named, RGBA) */
+header {
+    background: linear-gradient(135deg, rgb(240, 240, 240), rgb(255, 255, 255));
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Opacity Effect Example */
+.special-note:hover {
+    opacity: 0.9;
+}
