@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Session 1 - Complete Demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"
+          >ADA Egypt - Bootstrap Session 1</a
+        >
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-3 fw-bold mb-3">Bootstrap Framework</h1>
+            <p class="lead mb-4">
+              Learn Grid System, Utility Classes, and Responsive Design
+            </p>
+            <p class="mb-4">
+              Instructor: Saad Hassan Saad | Head of Software Department
+            </p>
+            <button class="btn btn-light btn-lg">Start Learning</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container py-5">
+      <!-- Section 1: Grid System Basics -->
+      <section class="demo-section">
+        <h2 class="section-header">1. Grid System - Equal Width Columns</h2>
+        <div class="row mb-4">
+          <div class="col">
+            <div class="demo-box bg-primary">Column 1</div>
+          </div>
+          <div class="col">
+            <div class="demo-box bg-secondary">Column 2</div>
+          </div>
+          <div class="col">
+            <div class="demo-box bg-success">Column 3</div>
+          </div>
+        </div>
+
+        <h3 class="mb-3">Specific Column Widths (4-8 Split)</h3>
+        <div class="row mb-4">
+          <div class="col-4">
+            <div class="demo-box bg-info">4 columns wide</div>
+          </div>
+          <div class="col-8">
+            <div class="demo-box bg-warning text-dark">8 columns wide</div>
+          </div>
+        </div>
+
+        <h3 class="mb-3">Responsive Columns</h3>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="demo-box bg-danger">
+              Mobile: 12, Tablet: 6, Desktop: 4
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="demo-box bg-dark">
+              Mobile: 12, Tablet: 6, Desktop: 4
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="demo-box bg-primary">
+              Mobile: 12, Tablet: 12, Desktop: 4
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Nested Grid -->
+      <section class="demo-section">
+        <h2 class="section-header">2. Nested Grid System</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="bg-light p-3 rounded">
+              <h5 class="mb-3">Main Content Area</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="demo-box bg-primary">Nested Column 1</div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="demo-box bg-secondary">Nested Column 2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-info text-white p-3 rounded">
+              <h5>Sidebar</h5>
+              <p class="mb-0">Additional content area</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Spacing Utilities -->
+      <section class="demo-section">
+        <h2 class="section-header">3. Spacing Utilities</h2>
+        <div class="bg-primary text-white p-3 mb-3 rounded">
+          Padding: 3, Margin Bottom: 3
+        </div>
+        <div class="bg-secondary text-white px-4 py-2 mb-3 rounded">
+          Padding X: 4, Padding Y: 2
+        </div>
+        <div class="bg-success text-white ps-5 pe-3 py-3 rounded">
+          Padding Start: 5, Padding End: 3
+        </div>
+      </section>
+
+      <!-- Section 4: Typography Utilities -->
+      <section class="demo-section">
+        <h2 class="section-header">4. Typography Utilities</h2>
+        <p class="text-center text-primary fs-4">
+          Centered Primary Text - Large
+        </p>
+        <p class="text-start">Left aligned text (default)</p>
+        <p class="text-end">Right aligned text</p>
+        <p class="text-uppercase">uppercase text transformation</p>
+        <p class="text-lowercase">LOWERCASE TEXT TRANSFORMATION</p>
+        <p class="text-capitalize">capitalize each word</p>
+        <p class="fw-bold">Bold text weight</p>
+        <p class="fw-normal">Normal text weight</p>
+        <p class="fst-italic">Italic text style</p>
+        <p class="text-decoration-underline">Underlined text</p>
+      </section>
+
+      <!-- Section 5: Color Utilities -->
+      <section class="demo-section">
+        <h2 class="section-header">5. Color Utilities</h2>
+        <h4 class="mb-3">Text Colors</h4>
+        <p class="text-primary">Primary color text</p>
+        <p class="text-secondary">Secondary color text</p>
+        <p class="text-success">Success color text</p>
+        <p class="text-danger">Danger color text</p>
+        <p class="text-warning">Warning color text</p>
+        <p class="text-info">Info color text</p>
+        <p class="text-muted">Muted color text</p>
+
+        <h4 class="mb-3 mt-4">Background Colors</h4>
+        <div class="bg-primary text-white p-3 mb-2 rounded">
+          Primary background
+        </div>
+        <div class="bg-success text-white p-3 mb-2 rounded">
+          Success background
+        </div>
+        <div class="bg-light text-dark p-3 mb-2 rounded">Light background</div>
+        <div class="bg-dark text-white p-3 rounded">Dark background</div>
+      </section>
+
+      <!-- Section 6: Display Utilities -->
+      <section class="demo-section">
+        <h2 class="section-header">6. Display Utilities</h2>
+        <div class="d-none d-md-block bg-info text-white p-3 mb-3 rounded">
+          Hidden on mobile, visible on medium screens and up
+        </div>
+        <div class="d-block d-lg-none bg-warning text-dark p-3 rounded">
+          Visible until large screens, then hidden
+        </div>
+      </section>
+
+      <!-- Section 7: Flexbox Utilities -->
+      <section class="demo-section">
+        <h2 class="section-header">7. Flexbox Utilities</h2>
+        <div
+          class="d-flex justify-content-between align-items-center bg-light p-3 mb-3 rounded"
+        >
+          <span>Left content</span>
+          <span class="badge bg-primary">Center badge</span>
+          <span>Right content</span>
+        </div>
+
+        <div
+          class="d-flex justify-content-center align-items-center bg-secondary text-white p-4 rounded mb-3"
+        >
+          <div>Perfectly centered content</div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row gap-3">
+          <div class="bg-primary text-white p-3 flex-fill rounded">
+            Flex Item 1
+          </div>
+          <div class="bg-success text-white p-3 flex-fill rounded">
+            Flex Item 2
+          </div>
+          <div class="bg-danger text-white p-3 flex-fill rounded">
+            Flex Item 3
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Responsive Utilities -->
+      <section class="demo-section">
+        <h2 class="section-header">8. Responsive Utilities</h2>
+        <div class="bg-primary text-white p-2 p-md-4 p-lg-5 rounded mb-3">
+          Responsive padding: small on mobile, larger on bigger screens
+        </div>
+        <h3 class="text-center text-md-start mb-3">
+          Centered on mobile, left-aligned on medium screens and up
+        </h3>
+      </section>
+
+      <!-- Section 9: Complete Card Example -->
+      <section class="demo-section">
+        <h2 class="section-header">9. Bootstrap Cards with Utilities</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Card with Header</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">
+                  This demonstrates Bootstrap card component with utility
+                  classes for styling.
+                </p>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-primary btn-sm">Action</button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Simple Card</h5>
+                <p class="card-text">
+                  Cards are flexible content containers with multiple variants
+                  and options.
+                </p>
+                <a href="#" class="btn btn-success">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 10: Team Section (Main Project) -->
+      <section class="demo-section">
+        <h2 class="section-header">10. Complete Team Section Project</h2>
+        <div class="row mb-4">
+          <div class="col-12 text-center">
+            <h3 class="display-5 text-primary mb-3">Our Team at ADA Egypt</h3>
+            <p class="lead text-muted">
+              Meet the professionals behind our success
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div
+                  class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 team-avatar"
+                >
+                  <span class="h3 mb-0 text-white">SH</span>
+                </div>
+                <h5 class="card-title">Saad Hassan Saad</h5>
+                <p class="text-muted mb-3">Head of Software Department</p>
+                <p class="card-text">
+                  Specializes in full stack web development and leading
+                  technical teams at ADA Egypt.
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <button class="btn btn-primary btn-sm">Contact</button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Portfolio
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div
+                  class="bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3 team-avatar"
+                >
+                  <span class="h3 mb-0 text-white">AM</span>
+                </div>
+                <h5 class="card-title">AbdulRahman Adam</h5>
+                <p class="text-muted mb-3">Senior Full Stack Developer</p>
+                <p class="card-text">
+                  Expert in React, Node.js and modern JavaScript frameworks with
+                  5 years experience.
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <button class="btn btn-success btn-sm">Contact</button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div
+                  class="bg-info rounded-circle d-inline-flex align-items-center justify-content-center mb-3 team-avatar"
+                >
+                  <span class="h3 mb-0 text-white">FM</span>
+                </div>
+                <h5 class="card-title">ElShimy Mahmoud</h5>
+                <p class="text-muted mb-3">Lead UI/UX Designer</p>
+                <p class="card-text">
+                  Creates beautiful and user-friendly interfaces with focus on
+                  user experience design.
+                </p>
+                <div class="d-flex justify-content-center gap-2">
+                  <button class="btn btn-info btn-sm">Contact</button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Behance
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 11: Business Layout Example -->
+      <section class="demo-section">
+        <h2 class="section-header">11. Complete Business Layout</h2>
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white">
+            <div class="d-flex justify-content-between align-items-center">
+              <h4 class="mb-0">Digital Agency Services</h4>
+              <span class="badge bg-light text-primary">Featured</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-8">
+                <h5 class="mb-3">About Our Services</h5>
+                <p class="lead">
+                  Professional web development and digital marketing solutions
+                  for modern businesses.
+                </p>
+                <div class="row g-3 mt-3">
+                  <div class="col-sm-6">
+                    <div class="bg-light p-3 rounded">
+                      <h6 class="text-primary">Web Development</h6>
+                      <p class="mb-0 small">
+                        Custom websites and applications using latest
+                        technologies
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-light p-3 rounded">
+                      <h6 class="text-success">Digital Marketing</h6>
+                      <p class="mb-0 small">
+                        SEO, social media, and content marketing strategies
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="bg-light p-4 rounded mt-3 mt-lg-0">
+                  <h6 class="mb-3">Contact Information</h6>
+                  <p class="mb-2 small">
+                    <strong>Email:</strong> info@adaegypt.com
+                  </p>
+                  <p class="mb-2 small">
+                    <strong>Phone:</strong> +20 123 456 7890
+                  </p>
+                  <p class="mb-3 small">
+                    <strong>Address:</strong> Cairo, Egypt
+                  </p>
+                  <button class="btn btn-primary w-100">Get Quote</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 12: Summary -->
+      <section class="demo-section">
+        <div class="card bg-primary text-white shadow-lg">
+          <div class="card-body p-5">
+            <h2 class="mb-4">Bootstrap Session 1 - Summary</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Topics Covered:</h5>
+                <ul>
+                  <li>Bootstrap Setup and Integration</li>
+                  <li>12-Column Grid System</li>
+                  <li>Responsive Breakpoints</li>
+                  <li>Container and Row Structure</li>
+                  <li>Nested Grids</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>Utility Classes:</h5>
+                <ul>
+                  <li>Spacing (Margin and Padding)</li>
+                  <li>Typography Utilities</li>
+                  <li>Color Utilities</li>
+                  <li>Display and Flexbox</li>
+                  <li>Responsive Utilities</li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <p class="lead mb-3">
+                Next Session: Bootstrap Components and JavaScript Features
+              </p>
+              <p class="mb-0">
+                Instructor: Saad Hassan Saad | Academy of Digital Arts Egypt
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Academy of Digital Arts Egypt</h5>
+            <p class="mb-0">
+              Empowering future developers with modern web technologies
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">Bootstrap Session 1 - 2025</p>
+            <p class="mb-0 small">Instructor: Saad Hassan Saad</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

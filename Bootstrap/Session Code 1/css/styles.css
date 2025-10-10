@@ -1,0 +1,19 @@
+.demo-section {
+  margin-bottom: 60px;
+}
+.demo-box {
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.team-avatar {
+  width: 80px;
+  height: 80px;
+}
+.section-header {
+  border-bottom: 3px solid #0d6efd;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
